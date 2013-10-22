@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html> 
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+        <meta property="fb:app_id" content="449283325123417" />
+        <meta property="og:type"   content="article" />
+        <meta property="og:title"  content="" />
+        <meta property="og:image"  content="http://code.3dissue.com/v6/resources/3dFacebook.png" />
+        <meta property="og:description"  content="No Description Available" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script>
+		    var agent = navigator.userAgent.toLowerCase();
+		    var unsupportedOS = agent.indexOf("mac os x 10.4") != -1 || agent.indexOf("mac os x 10.5") != -1 || agent.indexOf("mac os x 10_4") != -1 || agent.indexOf("mac os x 10_5") != -1;
+		    var isTouch = 'ontouchstart' in document.documentElement || agent.indexOf("touch") != -1 || (typeof navigator.msMaxTouchPoints != 'undefined' && navigator.msMaxTouchPoints);
+		    var isMobileTablet = (typeof orientation != 'undefined' || agent.indexOf("mobile") != -1 || agent.indexOf("tablet") != -1) && isTouch;
+
+		    if (unsupportedOS || isMobileTablet)
+		        window.location = "../html5/index.html?page=26"
+        </script>
+		<title></title>
+		<meta name="Keywords" content="Digital Magazine, Digital Edition, e-replica, e publishing, digital publishing software, eMag, PageFlip, 3dissue, 3D Issue"> 
+		<meta name="Description" content="">    
+        <style type="text/css" media="screen"> 
+            html, body  { height:100%; }
+            body { margin:0; padding:0; overflow:hidden; text-align:center; background-color: #1a1a1a; }   
+            object:focus { outline:none; }
+			#cover {display: none;}
+            #flashContent { width:100%; height:100%; z-index:1; position:relative; display:none; }
+    		#page-background {position:fixed; top:0; left:0; width:100%; height:100%; z-index:-2;}
+    		#preloader {position:fixed; top:50%; left:50%; margin-top:-25px; margin-left:-25px; width:50px; height:50px; z-index:-1;}
+        </style>
+        <!--[if IE]>
+        <style type="text/css">
+			html, body {overflow-y:hidden;}
+			#flashContent {position:static;}
+			#page-background {position:absolute; z-index:-2;}
+			#preloader {position:absolute; z-index:-1;}
+        </style>
+        <![endif]-->
+	    <script src="js/jquery.min.js"></script>
+		<script src="js/analytics.min.js"></script>
+		<script src="js/spin.min.js"></script>
+		
+        <script src="js/swfobject.js"></script>
+        <script>
+            $(document).ready(function() {
+                var opts = {
+                    lines: 11, // The number of lines to draw
+                    length: 0, // The length of each line
+                    width: 4, // The line thickness
+                    radius: 9, // The radius of the inner circle
+                    corners: 1, // Corner roundness (0..1)
+                    rotate: 0, // The rotation offset
+                    color: "#ffffff", // #rgb or #rrggbb
+                    speed: 1.1, // Rounds per second
+                    trail: 100, // Afterglow percentage
+                    shadow: false, // Whether to render a shadow
+                    hwaccel: false, // Whether to use hardware acceleration
+                    className: 'spinner', // The CSS class to assign to the spinner
+                    zIndex: 2e9, // The z-index (defaults to 2000000000)
+                    top: 'auto', // Top position relative to parent in px
+                    left: 'auto' // Left position relative to parent in px
+                };
+                var target = document.getElementById('preloader');
+                var spinner = new Spinner(opts).spin(target);
+            });
+
+            var bOnline = String(window.location.href).indexOf('http') == 0;
+            var swfName = bOnline ? "3dissue.swf" : "local.swf";
+            var swfVersionStr = "11.1.0";
+            var xiSwfUrlStr = "expressInstall.swf";
+            var flashvars =
+			{
+			    backgroundColour: "#1a1a1a",
+			    backgroundImage: "",
+			    preloaderColour: "#ffffff",
+			    myURL: "26",
+			    skinless: "1"
+			};
+            var params =
+			{
+			    quality: "high",
+			    bgcolor: "#1a1a1a",
+			    wmode: "transparent",
+			    scale: "noscale",
+			    menu: "true",
+			    devicefont: "false",
+			    allowscriptaccess: "sameDomain",
+			    allowfullscreen: "true"
+			};
+            var attributes =
+			{
+			    id: "3DIssue",
+			    name: "3DIssue",
+			    align: "middle"
+			};
+			swfobject.embedSWF("" + swfName, "flashContent", "100%", "100%", swfVersionStr, xiSwfUrlStr, flashvars, params, attributes);
+            swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script>
+    </head>
+    <body>
+	    <img id="cover" src="assets/cover/1.jpg"/>
+		    
+	    <div id="preloader"></div>
+        <div id="flashContent">
+            <p style="color: #FFFFFF;">
+                To view this page ensure that Adobe Flash Player version 11.1.0 or greater is installed. 
+            </p>
+            <script type="text/javascript">
+                var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://");
+                document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>"); 
+            </script> 
+        </div>
+        
+        <noscript>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="3DIssue">
+                <param name="movie" value="3dissue.swf" />
+                <param name="FlashVars" value="backgroundColour=#1a1a1a&backgroundImage=&preloaderColour=#ffffff&myURL=26&skinless=1" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="#1a1a1a" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="noscale" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="true" />
+                <!--[if !IE]>-->
+                <object type="application/x-shockwave-flash" data="3dissue.swf" width="100%" height="100%">
+                    <param name="FlashVars" value="backgroundColour=#1a1a1a&backgroundImage=&preloaderColour=#ffffff&myURL=26&skinless=1" />
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#1a1a1a" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="noscale" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowFullScreen" value="true" />
+                <!--<![endif]-->
+                <!--[if gte IE 6]>-->
+                    <p> 
+                        Either scripts and active content are not permitted to run or Adobe Flash Player version
+                        11.1.0 or greater is not installed.
+                    </p>
+                <!--<![endif]-->
+                    <a href="http://www.adobe.com/go/getflashplayer">
+                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                    </a>
+                <!--[if !IE]>-->
+                </object>
+                <!--<![endif]-->
+            </object>
+        </noscript>     
+		<div id="page_text" class="content">GARANTİ ŞARTLARI 
+1.Garanti süresi,malın teslim tarihinden itibaren başlar ve 2 Yıldır. 
+2.Malın bütün parçaları dahil olmak üzere tamamı firmamızın garantisi 
+kapsamındadır. 3.Malın garanti süresi içerisinde arızalanması durumunda,tamirde geçen 
+süre garanti süresine eklenir. Malın tamir süresi en fazla 30 iş günüdür. 
+20 Bu süre, mala ilişkin arızanın servis istasyonuna, servis istasyonunun 
+olmaması durumunda, malın satıcısı, bayii, acentası, temsilciliği, 
+ithalatcısı veya imalatçısından-üreticisinden birisine bildirim tarihinden 
+itibaren başlar. Sanayi malının arızasının 15 iş günü içerisinde 
+10 giderilmemesi halinde, imalatçı-üretici veya ithalatçı; malın tamiri 
+tamamlanıncaya kadar, benzer özelliklere sahip başka bir malını 
+tüketicinin kullanımına tahsis etmek zorundadır. 
+4.Malın garanti süresi içerisinde, gerek malzeme ve işçilik, gerekse montaj 
+hatalarından dolayı arızalanması halinde, işçilik masrafı, değiştirilen 
+parça bedeli ya da başka herhangi bir ad altında hiçbir ücret talep 
+etmeksizin tamiri yapılacaktır. 
+5.Tüketicinin onarım hakkını kullanmasına rağmen malın; 
+- Tüketiciye teslim edildiği tarihten itibaren, belirlenen garanti süresi içinde 
+kalmak kaydıyla bir yıl içerisinde; aynı arızanın ikiden fazla tekrarlanması 
+veya farklı arızaların dörtten fazla meydana gelmesi veya belirlenen 
+garanti süresi içerisinde farklı arızaların toplamının altıdan fazla olması 
+unsurlarını yanı sıra,bu arızaların maldan yararlanamamayı sürekli 
+kılması, - Tamiri için gereken azami sürenin aşılması, 
+- Firmanın servis istasyonunun mevcut olmaması halinde sırasıyla satıcısı, 
+bayii, acentasi, temsilciliği, ithalatçısı veya imalatçı-üreticisinden birisinin 
+düzenleyeceği raporla arızanın tamirinin mümkün bulunmadığının 
+belirlenmesi, durumlarında tüketici malın ücretsiz değiştirilmesini, bedel 
+iadesi veya ayıp oranında bedel indirimi talep edebilir. 
+ADI-SOYADI 
+ADRESİ 
+....................... ....................... 
+TEL 
+İMZA 
+• Montaj kartı 
+İMALATÇI 
+ÜNVANI : LG 
+MERKEZİ ADR 
+PİYALEPAŞA 
+OKMEYDANI 
+TELEFONU : 
+TELEFAKSI : 
+FİRMA YETKİL 
+İMZASI LG - 
+Kaptanpaşa 
+Vergi 
+Tel: (021 
+6.Malın kullanma kılavuzunda yer alan hususlara aykırı kullanılmasından 
+kaynaklanan arızalar garanti kapsamı dışındadır. 
+:... ADRESİ 
+7.Garanti belgesi ile ilgili olarak çıkabilecek sorunlar için Sanayi ve Ticaret 
+Bakanlığı Tüketicinin ve Rekabetinin Korunması Genel Müdürlüğü’ne 
+başvurulabilir. ÜNVANI 
+:... TELEFONU :... 
+TELEFAKSI :.. 
+</div>
+   </body>
+</html>
